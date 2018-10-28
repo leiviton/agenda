@@ -1,17 +1,17 @@
 $primary: #247A59;
-$text-color: white;
+$whiteColor: white;
 ios, .md {
  
     page-intro {
       
       ion-slide {
         .text-color {
-          color: $text-color;
+          color: $whiteColor;
         }
         .btn-next {
           max-width: 280px;
           width: 100%;
-          border: 1px solid white;
+          border: 1px solid $whiteColor;
         }
         background-color: $primary;
       }
