@@ -1,0 +1,26 @@
+$primary: #247A59;
+$text-color: white;
+ios, .md {
+ 
+    page-intro {
+      
+      ion-slide {
+        .text-color {
+          color: $text-color;
+        }
+        .btn-next {
+          max-width: 280px;
+          width: 100%;
+          border: 1px solid white;
+        }
+        background-color: $primary;
+      }
+   
+      ion-slide img {
+        height: auto !important;
+        width: auto !important;
+      }
+   
+    }
+   
+  }
