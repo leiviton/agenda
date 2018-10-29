@@ -7,7 +7,6 @@ import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
 
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -19,6 +18,9 @@ export class HomePage {
     name: "Rio de Janeiro, Brazil",
     date: new Date().toISOString()
   }
+
+  lat: number = 51.678418;
+  lng: number = 7.809007;
 
   constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController) {
   }

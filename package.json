@@ -1,8 +1,8 @@
 {
-  "name": "ionic3-start-theme",
+  "name": "Agenda FootBall",
   "version": "0.0.3",
-  "author": "João Firmino <firminoata@gmail.com>",
-  "homepage": "https://market.ionicframework.com/themes/ionic3-start-theme",
+  "author": "Leiviton <leivitonpj@gmail.com>",
+  "homepage": "https://agendafootball.com.br",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -11,6 +11,7 @@
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.3",
     "@angular/common": "4.4.4",
     "@angular/compiler": "4.4.4",
     "@angular/compiler-cli": "4.4.4",
@@ -41,10 +42,11 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.0.1",
+    "@types/googlemaps": "^3.30.16",
     "ionic": "3.19.0",
     "typescript": "2.3.4"
   },
-  "description": "Ionic 3 Start Theme",
+  "description": "Agenda FootBall",
   "cordovaPlugins": [],
   "cordovaPlatforms": [],
   "cordova": {

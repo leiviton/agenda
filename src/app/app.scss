@@ -545,3 +545,10 @@ ion-icon[ng-reflect-disabled="true"] {
 .fadeInDown {
   animation-name: fadeInDown;
 }
+
+page-home {
+  agm-map {
+      height: 100%;
+      width: 100%;
+    }
+}

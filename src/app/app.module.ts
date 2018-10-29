@@ -7,6 +7,7 @@ import {IonicStorageModule} from '@ionic/storage';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Keyboard} from '@ionic-native/keyboard';
+import { AgmCoreModule } from '@agm/core';
 
 import {ActivityService} from "../services/activity-service";
 import {TripService} from "../services/trip-service";
@@ -57,6 +58,10 @@ import {LocalWeatherPage} from "../pages/local-weather/local-weather";
     IonicStorageModule.forRoot({
       name: '__ionic3_start_theme',
         driverOrder: ['indexeddb', 'sqlite', 'websql']
+    }),
+    AgmCoreModule.forRoot({
+      apiKey: "AIzaSyCnahpwY4LRTYlzEHnER3B_Y8NR1HzmrVE",
+      libraries: ["places"]
     })
   ],
   bootstrap: [IonicApp],
