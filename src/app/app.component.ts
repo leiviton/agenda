@@ -44,17 +44,17 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.storage.get('introShown').then((result) => {
+      // this.storage.get('introShown').then((result) => {
  
-        if(result){
-          this.rootPage = HomePage;
-        } else {
-          this.rootPage = 'IntroPage';
-          //Set storage to skip intro page
-          //this.storage.set('introShown', true);
-        }
+      //   if(result){
+      //     this.rootPage = HomePage;
+      //   } else {
+      //     this.rootPage = LoginPage;
+      //     //Set storage to skip intro page
+      //     this.storage.set('introShown', true);
+      //   }
  
-      });
+      // });
 
       // Okay, so the platform is ready and our plugins are available.
 
