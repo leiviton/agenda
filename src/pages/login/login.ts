@@ -20,7 +20,7 @@ export class LoginPage {
 
   // login and go to home page
   login() {
-    this.nav.setRoot(HomePage);
+    this.nav.setRoot('IntroPage');
   }
 
   forgotPass() {

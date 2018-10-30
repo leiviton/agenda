@@ -1,5 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
 import { Platform, Nav } from "ionic-angular";
+import { Storage } from '@ionic/storage';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ export class MyApp {
     public platform: Platform,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
-    public keyboard: Keyboard
+    public keyboard: Keyboard,
+    public storage: Storage
   ) {
     this.initializeApp();
 
@@ -42,6 +44,18 @@ export class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
+      // this.storage.get('introShown').then((result) => {
+ 
+      //   if(result){
+      //     this.rootPage = HomePage;
+      //   } else {
+      //     this.rootPage = LoginPage;
+      //     //Set storage to skip intro page
+      //     this.storage.set('introShown', true);
+      //   }
+ 
+      // });
+
       // Okay, so the platform is ready and our plugins are available.
 
       //*** Control Splash Screen
@@ -65,6 +79,6 @@ export class MyApp {
 
   logout() {
     this.nav.setRoot(LoginPage);
-  }kdmfjhnmjhnjhnhjnhhgghkmjhnjtuhjnhnhnhggnhgbghnggnghnghnjhnhjnh
+  }
 
 }
